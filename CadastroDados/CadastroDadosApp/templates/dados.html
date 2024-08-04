@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios Cadastrados</title>
+</head>
+<body>
+    <main>
+        <h1>JESUS SEJA LOUVADO</h1><br>
+        <ul>
+            {% for dado in dados %}
+            
+            <li> ID: {{ dado.id }} // Nome: {{ dado.nome }} // Idade: {{ dado.idade }}</li>
+             
+            {% empty %}
+            
+            <p>A listá está vazia!</p>
+            
+            {% endfor %}
+        
+        </ul>
+
+        <a href="{% url 'home' %}">voltar à página de cadastros</a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro De Dados</title>
+</head>
+<body>
+    <main>
+        <h1>JESUS SEJA LOUVADO</h1><br>
+        <form action="{% url 'enviar_dados' %}" method="post">{% csrf_token %}
+            
+            <label for="">nome:</label>
+            <input type="text" name="nome" placeholder="digite seu nome:"><br><br>
+            <label for="">idade:</label>
+            <input type="number" name="idade" placeholder="digite sua idade:"><br><br>
+            <button type="submit">ENVIAR</button>
+            <br>
+            <br>
+            <a href="{% url 'dados' %}">ver usuários cadastrados</a>
+
+        </form>
+    </main>
+</body>
+</html>
