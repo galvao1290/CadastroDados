@@ -8,3 +8,8 @@ de nome e idade, um ID único de cada pessoa.
 
 - Cadastro de usuários
 - Listagem de usuários cadastrados
+
+## Tecnologias Utilizadas
+
+- Python
+- Django
